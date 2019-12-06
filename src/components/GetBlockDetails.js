@@ -33,9 +33,6 @@ export default class GetBlockDetails extends React.Component{
         this.setState({block:blocks, actions})
 
     }
-    onLoadClick=()=>{
-        this.fetchRecentBlocks()
-    }
     componentDidMount(){
         this.fetchRecentBlocks()
         }
@@ -43,7 +40,7 @@ export default class GetBlockDetails extends React.Component{
     render(){
         return(
         <div className="container">
-            <button onClick={this.onLoadClick} className="block__button">Load recent</button>
+            <button onClick={()=>{this.fetchRecentBlocks()}} className="block__button">Load recent</button>
             <div className="block">
                     {this.state.block.length!==0 && 
                         <div>

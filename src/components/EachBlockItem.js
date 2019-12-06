@@ -8,18 +8,20 @@ export default class EachBlockItem extends React.Component{
             open:false
         }
     }
+    onBlockItemClick(){
+        this.setState((prevState)=>{
+            return {open:!prevState.open}
+        })
+    }
+    
     render(){
         const time=this.props.block.timestamp
         const id=this.props.block.id
         const actions=this.props.actions
-        this.onBlockItemClick=()=>{
-            this.setState((prevState)=>{
-                return {open:!prevState.open}
-            })
-        }
+       
         return(
-            <div class="app">
-                <div onClick={this.onBlockItemClick} className="block__item">
+            <div className="app">
+                <div onClick={()=>{this.onBlockItemClick()}} className="block__item">
                   {/* <span className="block__item-title">Time stamp:</span> */}
                     <p>{time}</p>
                   {/* <span className="block__item-title">Id:</span> */}

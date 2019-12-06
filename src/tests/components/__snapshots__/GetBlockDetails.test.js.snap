@@ -2,7 +2,7 @@
 
 exports[`renders the component correctly  1`] = `
 "<div className=\\"container\\">
-  <button onClick={[Function]} className=\\"block__button\\">
+  <button onClick={[Function: onClick]} className=\\"block__button\\">
     Load recent
   </button>
   <div className=\\"block\\" />

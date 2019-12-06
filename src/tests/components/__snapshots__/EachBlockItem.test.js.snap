@@ -1,8 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`renders the component correctly with fixture data 1`] = `
-"<div class=\\"app\\">
-  <div onClick={[Function]} className=\\"block__item\\">
+"<div className=\\"app\\">
+  <div onClick={[Function: onClick]} className=\\"block__item\\">
     <p />
     <p>
       sampleId123
